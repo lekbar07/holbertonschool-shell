@@ -1,2 +1,2 @@
-#!/holbertonschool-shell/basics
+$ ./3-listfiles
 ls -l
