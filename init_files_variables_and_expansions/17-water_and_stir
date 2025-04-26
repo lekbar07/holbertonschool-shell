@@ -1,15 +1,3 @@
 #!/bin/bash
-# Map base names to numeric values
-base_water=5
-base_stir=8
-base_bestchol=13
-
-# Convert WATER and STIR from their bases to decimal
 water_decimal=$((ibase=$base_water; $WATER))
 stir_decimal=$((ibase=$base_stir; $STIR))
-
-# Add them
-sum=$((water_decimal + stir_decimal))
-
-# Convert sum to bestchol base using bc
-echo "obase=$base_bestchol; $sum" | bc
