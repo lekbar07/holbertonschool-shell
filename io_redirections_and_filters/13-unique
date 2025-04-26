@@ -1,0 +1,12 @@
+#!/bin/bash
+# Read input and store the words in an array
+words=()
+
+while read -r word; do
+    words+=("$word")
+done
+
+# Sort the words, count the occurrences, and print the ones that appear exactly once
+for word in $(echo "${words[@]}" | tr ' ' '\n' | sort | uniq -u); do
+    echo "$word"
+done
