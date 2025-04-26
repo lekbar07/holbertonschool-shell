@@ -1,0 +1,2 @@
+#!/bin/bash
+s -tp | grep -v '/$' | head -n 10
