@@ -1,2 +1,2 @@
 #!/bin/bash
-ln -s /bin/ls __ls_:wq!_
+ln -s /bin/ls __ls__
